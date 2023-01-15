@@ -1,0 +1,42 @@
+[
+  {
+    "label": "TARSKI:2",
+    "query": "for X, Y being set st ( for x being object holds \n ( x in X iff x in Y ) ) holds \n X = Y;"
+  },
+  {
+    "label": "SUBSET_1:41",
+    "query": "for X, x being set st x in X holds \n {x} is Subset of X"
+  },
+  {
+    "label": "FUNCT_2:5",
+    "query": "for X, Y being set \n for x being object \n for f being Function of X,Y st Y <> {} & x in X holds \n f . x in Y;"
+  },
+  {
+    "label": "NAT_1:52",
+    "query": "for Y being set \n for X being non empty set \n for s being sequence of X st ( for n being Nat holds s . n in Y ) holds \n rng s c= Y;"
+  },
+  {
+    "label": "FINSEQ_2:28",
+    "query": "for i being natural Number \n for D being non empty set \n for q being FinSequence \n for f being sequence of D st q = f | (Seg i) holds \n len q = i;"
+  },
+  {
+    "label": "GROUP_19:45",
+    "query": "for G being Group \n for H being Subgroup of G \n for a being FinSequence of G \n for b being FinSequence of H st a = b holds \n Product a = Product b;"
+  },
+  {
+    "label": "SPRECT_3:52",
+    "query": "for f, g being FinSequence of (TOP-REAL 2) \n for p being Point of (TOP-REAL 2) st g is_in_the_area_of f & <*p*> is_in_the_area_of f & g is being_S-Seq & p in L~ g holds \n R_Cut (g,p) is_in_the_area_of f;"
+  },
+  {
+    "label": "ABCMIZ_0:34",
+    "query": "for T being non empty reflexive transitive non void TA-structure \n for t being type of T \n for v1, v2 being FinSequence of the adjectives of T holds apply ((v1 ^ v2),t) = (apply (v1,t)) $^ (apply (v2,(v1 ast t)));"
+  },
+  {
+    "label": "INTEGR23:12",
+    "query": "for s being non empty increasing FinSequence of REAL \n for a being Real st s . (len s) < a holds \n s ^ <*a*> is non empty increasing FinSequence of REAL;"
+  },
+  {
+    "label": "MATRIXR1:1",
+    "query": "for r1, r2 being Real \n for fr1, fr2 being Element of F_Real st r1 = fr1 & r2 = fr2 holds \n r1 + r2 = fr1 + fr2 ;"
+  }
+]
