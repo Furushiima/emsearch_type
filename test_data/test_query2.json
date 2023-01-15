@@ -1,0 +1,42 @@
+[
+  {
+    "label": "TARSKI:2",
+    "query": "reserve X, Y for set; \n reserve x for object; \n X <> Y implies ex x being object st x in X /\\ Y;"
+  },
+  {
+    "label": "SUBSET_1:41",
+    "query": "reserve X, x for set; \n not {x} is Subset of X implies not x in X;"
+  },
+  {
+    "label": "FUNCT_2:5",
+    "query": "reserve X, Y for set; \n reserve x for object; \n ex f being Function of X , Y st Y <> {} & x in X & not ( f . x in Y) ;"
+  },
+  {
+    "label": "NAT_1:52",
+    "query": "reserve Y for set; \n reserve X for non empty set; \n reserve s for sequence of X; \n rng s > Y implies ex n st not (s . n in Y);"
+  },
+  {
+    "label": "FINSEQ_2:28",
+    "query": "reserve i for natural Number; \n reserve D for non empty set; \n reserve q for FinSequence; \n ex f being sequence of D st q = f|(Seg i) & not (len q = i);"
+  },
+  {
+    "label": "GROUP_19:45",
+    "query": "for G being Group \n for H being Subgroup of G \n for a being FinSequence of G \n for b being FinSequence of H st a = b holds"
+  },
+  {
+    "label": "SPRECT_3:52",
+    "query": "for f, g being FinSequence of (TOP-REAL 2) \n for p being Point of (TOP-REAL 2) st g is_in_the_area_of f & <*p*> is_in_the_area_of f & g is being_S-Seq & p in L~ g"
+  },
+  {
+    "label": "ABCMIZ_0:34",
+    "query": "for T being non empty reflexive transitive non void TA-structure \n for t being type of T \n for v1, v2 being FinSequence of the adjectives of T holds"
+  },
+  {
+    "label": "INTEGR23:12",
+    "query": "for s being non empty increasing FinSequence of REAL \n for a being Real st s . (len s) < a holds"
+  },
+  {
+    "label": "MATRIXR1:1",
+    "query": "for r1, r2 being Real \n for fr1, fr2 being Element of F_Real st r1 = fr1 & r2 = fr2 holds"
+  }
+]
